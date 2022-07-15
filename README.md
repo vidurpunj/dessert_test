@@ -4,6 +4,9 @@ puts "Enter a string"
 str = gets.chomp
 puts str.reverse
 
+question2 
+is in the repository
+
 question3.rb
 
 ## print fibonacci
