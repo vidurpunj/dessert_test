@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Date inputs</h1>
+
+<div id="date_inputs">
+  <% @date_inputs.each do |date_input| %>
+    <%= render date_input %>
+    <p>
+      <%= link_to "Show this date input", date_input %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New date input", new_date_input_path %>

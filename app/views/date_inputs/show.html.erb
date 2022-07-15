@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @date_input %>
+
+<div>
+  <%= link_to "Edit this date input", edit_date_input_path(@date_input) %> |
+  <%= link_to "Back to date inputs", date_inputs_path %>
+
+  <%= button_to "Destroy this date input", @date_input, method: :delete %>
+</div>

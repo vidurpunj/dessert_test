@@ -1,0 +1,22 @@
+<%= form_with(model: date_input) do |form| %>
+  <% if date_input.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(date_input.errors.count, "error") %> prohibited this date_input from being saved:</h2>
+
+      <ul>
+        <% date_input.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :sample, style: "display: block" %>
+    <%= form.text_area :sample %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
